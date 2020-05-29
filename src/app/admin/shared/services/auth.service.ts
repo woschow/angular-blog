@@ -6,7 +6,7 @@ import {environment} from "../../../../environments/environment";
 import {catchError, tap} from "rxjs/operators";
 import {isLineBreak} from "codelyzer/angular/sourceMappingVisitor";
 
-@Injectable()
+@Injectable({providedIn: 'root'})
 export class AuthService{
   constructor(private http: HttpClient) {
   }
